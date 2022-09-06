@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FAFBF2</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#1763EA</color>
+    <color name="home_background">#FAFBFD</color>
+    <color name="bottomNavColor">#FFFFFF</color>
+    <color name="bottomNavSelectedColor">#1763EA</color>
+    <color name="colorAccent">#909CAE</color>
+    <color name="colorCardFeaturedText">#00B99F</color>
+    <color name="colorItemListDetails">#9DA0A5</color>
+    <color name="colorItemColor">#1763EA</color>
+    <color name="colorToolbarTitle">#FF000000</color>
+    <color name="colorBottomNavItemNotSelected">#909CAE</color>
+    <color name="colorMBBidPriceLabel">#A5A6A8</color>
+    <color name="colorProfileTextColor">#222325</color>
+    <color name="colorMoreOptionsHeader">#2E3032</color>
+    <color name="colorMoreItemText">#36342F</color>
+    <color name="colorAboutUsTitle">#141413</color>
+    <color name="Red">#E74C3C</color>
+    <color name="green">#43A047</color>
+    <color name="welcome_gray">#818478</color>
+    <color name="compare_gray">#31322D</color>
+    <color name="login_continue">#797A73</color>
+    <color name="edit">#8F9187</color>
+    <color name="forgot">#7D7E76</color>
+    <color name="reset">#00B99F</color>
+    <color name="color1">#00B99F</color>
+    <color name="color2">#F39C12</color>
+    <color name="color3">#E74C3C</color>
+
+</resources>

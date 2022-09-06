@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".utills.Change"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:elevation="2dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Vehicle Status"
+            android:textSize="15dp"
+            android:padding="20dp"
+            android:fontFamily="@font/mulish_regular"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            >
+            <TextView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:textSize="13dp"
+                android:fontFamily="@font/mulish_regular"
+                android:textColor="#E74C3C"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:padding="20dp"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="@drawable/background2"
+        android:layout_margin="15dp"
+        android:elevation="2dp"
+        >
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BMW 7 Series (2005)"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/mulish_regular"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="73OLD Seden"
+                android:textSize="10dp"
+                android:fontFamily="@font/mulish_regular"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:fontFamily="@font/mulish_regular"
+                android:text="AD ID - 123456789"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:paddingStart="5dp"
+            android:text="Available"
+            android:buttonTint="#00B99F"
+            android:textColor="#00B99F"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="5dp"
+            android:textColor="#F39C12"
+            android:buttonTint="#F39C12"
+            android:text="Withdraw" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#E74C3C"
+            android:paddingStart="5dp"
+            android:text="Sold"
+            android:textColor="#E74C3C" />
+
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:id="@+id/update_status"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg3"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:elevation="2dp"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Status"
+            android:textAllCaps="true"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/mulish_regular"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

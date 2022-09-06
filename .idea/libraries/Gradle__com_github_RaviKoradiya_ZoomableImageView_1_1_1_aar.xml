@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.RaviKoradiya:ZoomableImageView:1.1.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f6870d772a6215900fc66696a830c00b/jetified-ZoomableImageView-1.1.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f6870d772a6215900fc66696a830c00b/jetified-ZoomableImageView-1.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f6870d772a6215900fc66696a830c00b/jetified-ZoomableImageView-1.1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/Downloads/CustomListView-master/caches/transforms-2/files-2.1/120f4a1aee1c5c4a0b76232b8ff9d114/jetified-ZoomableImageView-1.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/Downloads/CustomListView-master/caches/transforms-2/files-2.1/120f4a1aee1c5c4a0b76232b8ff9d114/jetified-ZoomableImageView-1.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/CustomListView-master/caches/transforms-2/files-2.1/120f4a1aee1c5c4a0b76232b8ff9d114/jetified-ZoomableImageView-1.1.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Downloads/CustomListView-master/caches/modules-2/files-2.1/com.github.RaviKoradiya/ZoomableImageView/1.1.1/9a64cbdbcea4ef078d78aab5c82758018799d2e0/ZoomableImageView-1.1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/CustomListView-master/caches/modules-2/files-2.1/com.github.RaviKoradiya/ZoomableImageView/1.1.1/917f13ee543f227fc2327c2159025c3160dea74/ZoomableImageView-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

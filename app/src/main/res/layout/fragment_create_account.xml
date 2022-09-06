@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/progressBar"
+            style="@style/SpinKitView.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:focusableInTouchMode="true"
+            android:indeterminate="true"
+            android:elevation="10dp"
+            android:visibility="gone"
+            app:SpinKit_Color="@color/blue" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_vector"
+            >
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:text=" Create Account"
+                android:textSize="20dp"
+                android:fontFamily="@font/mulish_regular"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/welcome_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish_regular"
+                android:text="@string/create_own_account"
+                android:textAlignment="textStart"
+                android:textColor="#797A73"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/back"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.60" />
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/gl_bottom"
+                app:layout_constraintTop_toBottomOf="@+id/welcome_tv"
+                >
+
+                <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+                <!--                    android:id="@+id/cl_login"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="70dp"-->
+                <!--                    android:layout_marginStart="20dp"-->
+                <!--                    android:layout_marginTop="30dp"-->
+                <!--                    android:layout_marginEnd="20dp"-->
+                <!--                    android:background="@drawable/rectangle"-->
+                <!--                    android:elevation="5dp"-->
+                <!--                    tools:ignore="MissingConstraints">-->
+
+                <!--                    <androidx.appcompat.widget.AppCompatImageView-->
+                <!--                        android:id="@+id/img_email"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginStart="25dp"-->
+                <!--                        android:src="@drawable/ic_user"-->
+                <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                        app:layout_constraintStart_toStartOf="parent"-->
+                <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                    <com.google.android.material.textfield.TextInputLayout-->
+                <!--                        android:id="@+id/email_edt"-->
+                <!--                        android:layout_width="0dp"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginStart="20dp"-->
+                <!--                        android:layout_marginEnd="5dp"-->
+                <!--                        android:hint="@string/first_name"-->
+                <!--                        android:textColorHint="@color/compare_gray"-->
+                <!--                        app:hintTextColor="@color/edit"-->
+                <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                        app:layout_constraintStart_toEndOf="@+id/img_email"-->
+                <!--                        app:layout_constraintTop_toTopOf="parent">-->
+
+                <!--                        <EditText-->
+                <!--                            android:id="@+id/first_name"-->
+                <!--                            android:layout_width="match_parent"-->
+                <!--                            android:layout_height="40dp"-->
+                <!--                            android:background="@null"-->
+                <!--                            android:text="@={motorVM.firstName}"-->
+                <!--                            android:fontFamily="@font/mulish_regular"-->
+                <!--                            android:singleLine="true"-->
+                <!--                            android:textColor="@color/edit"-->
+                <!--                            android:textSize="15sp" />-->
+                <!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+                <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/div"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/transparent"
+                    tools:ignore="MissingConstraints"
+                    />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_business_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/div"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/ic_user"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/email_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:hint="@string/first_name"
+                        android:textColorHint="@color/compare_gray"
+                        app:hintTextColor="@color/edit"
+                        android:fontFamily="@font/mulish_regular"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_email"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <EditText
+                            android:id="@+id/full_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:fontFamily="@font/mulish_regular"
+                            android:singleLine="true"
+                            android:textColor="@color/edit"
+                            android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/error1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_business_name"
+                    android:text="Error"
+                    android:textSize="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#E53935"
+                    android:fontFamily="@font/mulish_regular"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="textEnd"
+                    android:paddingEnd="10dp"
+                    android:visibility="gone"
+                    />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_business"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/error1"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_business"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/ic_user"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/business_tl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:hint="@string/last_name"
+                        android:textColorHint="@color/compare_gray"
+                        app:hintTextColor="@color/edit"
+                        android:fontFamily="@font/mulish_regular"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_business"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <EditText
+                            android:id="@+id/business_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:fontFamily="@font/mulish_regular"
+                            android:singleLine="true"
+                            android:textColor="@color/edit"
+                            android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/error2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_business"
+                    android:text="Error"
+                    android:textSize="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#E53935"
+                    android:fontFamily="@font/mulish_regular"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="textEnd"
+                    android:paddingEnd="10dp"
+                    android:visibility="gone"
+                    />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_business_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/error2"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_business_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/ic_email"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/business_tl_email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:hint="@string/email_address"
+                        android:textColorHint="#31322D"
+                        app:hintTextColor="#31322D"
+                        android:fontFamily="@font/mulish_regular"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_business_email"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <EditText
+                            android:id="@+id/business_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:fontFamily="@font/mulish_regular"
+                            android:singleLine="true"
+                            android:textColor="@color/edit"
+                            android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/error3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_business_email"
+                    android:text="Error"
+                    android:textSize="15dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/mulish_regular"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#E53935"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="textEnd"
+                    android:paddingEnd="10dp"
+                    android:visibility="gone"
+                    />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_business_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/error3"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_business_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/ic_smartphone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/business_tl_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:hint="@string/phone"
+                        android:textColorHint="#31322D"
+                        android:fontFamily="@font/mulish_regular"
+                        app:hintTextColor="#31322D"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_business_phone"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <EditText
+                            android:id="@+id/business_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:fontFamily="@font/mulish_regular"
+                            android:singleLine="true"
+                            android:maxLength="10"
+                            android:inputType="phone"
+                            android:textColor="#8F9187"
+                            android:textSize="15sp" />
+
+                        <include layout="@layout/prograssbar" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--                <LinearLayout-->
+                <!--                    android:id="@+id/cl_business_docc"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="20dp"-->
+                <!--                    android:layout_marginTop="15dp"-->
+                <!--                    android:layout_marginEnd="20dp"-->
+                <!--                    android:background="@drawable/rectangle"-->
+                <!--                    android:elevation="5dp"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/cl_business_phone"-->
+                <!--                    tools:ignore="MissingConstraints"-->
+                <!--                    android:orientation="vertical">-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginStart="15dp"-->
+                <!--                        android:layout_marginTop="10dp"-->
+                <!--                        android:text="Buisness Registration Document"-->
+                <!--                        android:fontFamily="@font/mulish_regular"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                        app:layout_constraintStart_toStartOf="parent"-->
+                <!--                        app:layout_constraintTop_toTopOf="parent">-->
+
+                <!--                    </TextView>-->
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="40dp"-->
+                <!--                        android:layout_margin="15dp"-->
+                <!--                        android:background="@drawable/vector47"-->
+                <!--                        android:gravity="center"-->
+                <!--                        >-->
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_gravity="center"-->
+                <!--                            android:layout_marginStart="15dp"-->
+                <!--                            android:fontFamily="@font/mulish_regular"-->
+                <!--                            android:text="Upload File"-->
+                <!--                            android:textStyle="bold"-->
+                <!--                            android:textColor="#00B99F"/>-->
+
+                <!--                    </LinearLayout>-->
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:orientation="horizontal"-->
+                <!--                        android:layout_marginBottom="10dp">-->
+
+
+
+                <!--                        <ImageView-->
+                <!--                            android:layout_width="25dp"-->
+                <!--                            android:layout_height="25dp"-->
+                <!--                            android:layout_gravity="center"-->
+                <!--                            android:layout_marginStart="15dp"-->
+                <!--                            android:src="@drawable/vector23"/>-->
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_gravity="center"-->
+                <!--                            android:layout_marginStart="15dp"-->
+                <!--                            android:fontFamily="@font/mulish_regular"-->
+                <!--                            android:text="File Name0120.pdf">-->
+
+                <!--                        </TextView>-->
+
+                <!--                        <LinearLayout-->
+                <!--                            android:layout_width="match_parent"-->
+                <!--                            android:layout_height="match_parent"-->
+                <!--                            android:gravity="end"-->
+                <!--                            android:layout_marginEnd="15dp"-->
+                <!--                            >-->
+                <!--                        <ImageView-->
+                <!--                            android:layout_width="15dp"-->
+                <!--                            android:layout_height="match_parent"-->
+                <!--                            android:layout_gravity="end"-->
+                <!--                            android:src="@drawable/vector46"/>-->
+                <!--                        </LinearLayout>-->
+
+                <!--                    </LinearLayout>-->
+
+
+                <!--                </LinearLayout>-->
+
+                <TextView
+                    android:id="@+id/error4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_business_phone"
+                    android:text="Error"
+                    android:textSize="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#E53935"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="textEnd"
+                    android:fontFamily="@font/mulish_regular"
+                    android:paddingEnd="10dp"
+                    android:visibility="gone"
+                    />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_abn"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/error4"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_abn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/ic_address"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/abn_tl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:hint="Address Line"
+                        android:textColorHint="#31322D"
+                        app:hintTextColor="#31322D"
+                        android:fontFamily="@font/mulish_regular"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_abn"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <EditText
+                            android:id="@+id/abn"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:fontFamily="@font/mulish_regular"
+                            android:singleLine="true"
+                            android:textColor="@color/edit"
+                            android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/error5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_abn"
+                    android:text="Error"
+                    android:textSize="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#E53935"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="textEnd"
+                    android:fontFamily="@font/mulish_regular"
+                    android:paddingEnd="10dp"
+                    android:visibility="gone"
+                    />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/error5"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/ic_location"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/state"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:textColorHint="#31322D"
+                        app:hintTextColor="#31322D"
+                        android:prompt="@string/select_state"
+                        android:fontFamily="@font/mulish_regular"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_state"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/error6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_state"
+                    android:text="Error"
+                    android:textSize="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#E53935"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/mulish_regular"
+                    android:textAlignment="textEnd"
+                    android:paddingEnd="10dp"
+                    android:visibility="gone"
+                    />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_postcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/error6"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_postcode"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/v_7"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/postcode_tl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:hint="@string/post_code"
+                        android:textColorHint="#31322D"
+                        app:hintTextColor="#31322D"
+                        android:fontFamily="@font/mulish_regular"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_postcode"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <EditText
+                            android:id="@+id/post_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:fontFamily="@font/mulish_regular"
+                            android:singleLine="true"
+                            android:maxLength="10"
+                            android:inputType="phone"
+                            android:textColor="@color/edit"
+                            android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/error7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_postcode"
+                    android:text="Error"
+                    android:textSize="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#E53935"
+                    android:fontFamily="@font/mulish_regular"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="textEnd"
+                    android:paddingEnd="10dp"
+                    android:visibility="gone"
+                    />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@drawable/rectangle"
+                    android:elevation="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/error7">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/ic_padlock"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/pass_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:hint="@string/set_password"
+                        android:textColorHint="#31322D"
+                        app:hintTextColor="#31322D"
+                        android:fontFamily="@font/mulish_regular"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_password"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:passwordToggleDrawable="@drawable/show_password_selector"
+                        app:passwordToggleEnabled="true">
+
+                        <EditText
+                            android:id="@+id/set_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="@font/mulish_regular"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:textColor="#8F9187"
+                            android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/error8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_password"
+                    android:text="Error"
+                    android:textSize="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#E53935"
+                    android:fontFamily="@font/mulish_regular"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="textEnd"
+                    android:paddingEnd="10dp"
+                    android:visibility="gone"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/error8" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            <Button
+                android:id="@+id/continue_btn"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rectangle_blue"
+                android:elevation="5dp"
+                android:text="@string/continuee"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:fontFamily="@font/mulish_regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/welcome_tv"
+                app:layout_constraintTop_toBottomOf="@+id/gl_bottom" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/loginwith_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/mulish_regular"
+                android:singleLine="true"
+                android:text="@string/signup_with"
+                android:textAlignment="textStart"
+                android:textColor="@color/forgot"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/continue_btn" />
+
+            <Button
+                android:id="@+id/google_login"
+                android:layout_width="155dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_google"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:fontFamily="@font/mulish_regular"
+                app:layout_constraintTop_toBottomOf="@+id/loginwith_tv" />
+
+            <FrameLayout
+                android:layout_width="155dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/loginwith_tv"
+                android:visibility="gone"
+                >
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/facebook_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/Relative"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_facebook"
+                    />
+
+            </FrameLayout>
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dnt_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/mulish_regular"
+                android:singleLine="true"
+                android:text="@string/Already_have_a_Account"
+                android:textAlignment="textStart"
+                android:textColor="@color/compare_gray"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/gl_center"
+                app:layout_constraintTop_toBottomOf="@+id/google_login" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/create_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/mulish_regular"
+                android:singleLine="true"
+                android:text="@string/login_now"
+                android:textAlignment="textStart"
+                android:textColor="@color/reset"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/gl_center"
+                app:layout_constraintTop_toBottomOf="@+id/google_login" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+</ScrollView>

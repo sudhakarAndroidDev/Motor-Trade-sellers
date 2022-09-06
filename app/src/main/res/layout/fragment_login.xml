@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_vector"
+        >
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/welcome_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/mulish_regular"
+                    android:singleLine="true"
+                    android:text="@string/welcome"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/welcome_gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/compare_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/mulish_regular"
+                    android:singleLine="true"
+                    android:text="@string/compare"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/compare_gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/welcome_tv"
+                    app:layout_constraintTop_toBottomOf="@+id/welcome_tv" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/mulish_regular"
+                    android:singleLine="true"
+                    android:text="@string/login_to_continue"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/login_continue"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/compare_tv"
+                    app:layout_constraintTop_toBottomOf="@+id/compare_tv" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/ic_email"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/email_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:hint="@string/email"
+                        android:fontFamily="@font/mulish_regular"
+                        android:textColorHint="@color/compare_gray"
+                        app:hintTextColor="@color/compare_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_email"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <EditText
+                            android:id="@+id/email_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:fontFamily="@font/mulish_regular"
+                            android:singleLine="true"
+                            android:textColor="@color/edit"
+                            android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/error1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/welcome_tv"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_login"
+                    android:text="Error"
+                    android:textSize="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#E53935"
+                    android:fontFamily="@font/mulish_regular"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="textEnd"
+                    android:paddingEnd="10dp"
+                    android:visibility="gone"
+                    />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/error1">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/ic_padlock"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/pass_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:hint="@string/password"
+                        android:fontFamily="@font/mulish_regular"
+                        android:textColorHint="@color/compare_gray"
+                        app:hintTextColor="@color/compare_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_password"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:passwordToggleDrawable="@drawable/show_password_selector"
+                        app:passwordToggleEnabled="true">
+
+                        <EditText
+                            android:id="@+id/password_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="@font/mulish_regular"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:textColor="@color/edit"
+                            android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    android:id="@+id/progressBar"
+                    style="@style/SpinKitView.Circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:focusableInTouchMode="true"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_password"
+                    app:SpinKit_Color="@color/blue" />
+
+                <TextView
+                    android:id="@+id/error2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/welcome_tv"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_password"
+                    android:text="Error"
+                    android:textSize="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/mulish_regular"
+                    android:textColor="#E53935"
+                    android:textAlignment="textEnd"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/forgot_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:fontFamily="@font/mulish_regular"
+                    android:singleLine="true"
+                    android:text="@string/forgot"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/forgot"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/welcome_tv"
+                    app:layout_constraintTop_toBottomOf="@+id/error2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/reset_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="21dp"
+                    android:fontFamily="@font/mulish_regular"
+                    android:singleLine="true"
+                    android:text="@string/reset"
+                    android:onClick="@{(v)-> motorVM.onClickAction(v)}"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/reset"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@+id/forgot_tv"
+                    app:layout_constraintTop_toBottomOf="@+id/error2" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="30dp"
+                    android:elevation="5dp"
+                    android:text="@string/login"
+                    android:id="@+id/login_btn"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/mulish_regular"
+                    android:textSize="15sp"
+                    android:background="@drawable/rectangle_blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/welcome_tv"
+                    app:layout_constraintTop_toBottomOf="@+id/forgot_tv" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/loginwith_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/mulish_regular"
+                    android:singleLine="true"
+                    android:text="@string/login_with"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/forgot"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+
+                <Button
+                    android:layout_width="155dp"
+                    android:layout_height="46dp"
+                    android:background="@drawable/ic_google"
+                    android:id="@+id/btn_google"
+                    android:onClick="@{(v)-> motorVM.onClickAction(v)}"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/loginwith_tv" />
+
+<!--                <FrameLayout-->
+<!--                    android:id="@+id/Relative"-->
+<!--                    android:layout_width="155dp"-->
+<!--                    android:layout_height="46dp"-->
+<!--                    android:background="@drawable/ic_facebook"-->
+<!--                    app:layout_constraintLeft_toRightOf="@+id/btn_google"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:gravity="center"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/loginwith_tv"-->
+<!--                    >-->
+<!--                <com.facebook.login.widget.LoginButton-->
+<!--                    android:id="@+id/facebook_login"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:visibility="invisible"-->
+<!--                    />-->
+<!--                </FrameLayout>-->
+
+                <FrameLayout
+
+                    android:layout_width="155dp"
+                    android:layout_height="46dp"
+                    app:layout_constraintLeft_toRightOf="@+id/btn_google"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@+id/loginwith_tv" >
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/facebook_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         />
+
+                    <Button
+                        android:id="@+id/Relative"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_facebook"
+                         />
+                </FrameLayout>
+
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/gl_center"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/dnt_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/mulish_regular"
+                    android:singleLine="true"
+                    android:text="@string/have_account"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/compare_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/gl_center"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_google" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/create_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/mulish_regular"
+                    android:singleLine="true"
+                    android:text="@string/create_account"
+                    android:onClick="@{(v)-> motorVM.onClickAction(v)}"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/reset"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@+id/gl_center"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_google" />
+
+                <include layout="@layout/prograssbar" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

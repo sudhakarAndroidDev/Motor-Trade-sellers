@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.android:facebook-android-sdk:12.3.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4476f57778cddb843d61e4ec51d9beaf/jetified-facebook-android-sdk-12.3.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f9cbaeebeaf53e2a3a803b4db4b1f2e9/jetified-facebook-android-sdk-12.3.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4476f57778cddb843d61e4ec51d9beaf/jetified-facebook-android-sdk-12.3.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4476f57778cddb843d61e4ec51d9beaf/jetified-facebook-android-sdk-12.3.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/Downloads/CustomListView-master/caches/transforms-2/files-2.1/4476f57778cddb843d61e4ec51d9beaf/jetified-facebook-android-sdk-12.3.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/CustomListView-master/caches/transforms-2/files-2.1/4476f57778cddb843d61e4ec51d9beaf/jetified-facebook-android-sdk-12.3.0/res" />
+      <root url="file://$USER_HOME$/Downloads/CustomListView-master/caches/transforms-2/files-2.1/4476f57778cddb843d61e4ec51d9beaf/jetified-facebook-android-sdk-12.3.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-android-sdk/12.3.0/298ab6360ab0a2f61d1f1e04d43f32100e02a529/facebook-android-sdk-12.3.0-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/CustomListView-master/caches/modules-2/files-2.1/com.facebook.android/facebook-android-sdk/12.3.0/298ab6360ab0a2f61d1f1e04d43f32100e02a529/facebook-android-sdk-12.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-android-sdk/12.3.0/ce3f5da8fe56ad59cb4903ee815ca2f4017ddde6/facebook-android-sdk-12.3.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/CustomListView-master/caches/modules-2/files-2.1/com.facebook.android/facebook-android-sdk/12.3.0/ce3f5da8fe56ad59cb4903ee815ca2f4017ddde6/facebook-android-sdk-12.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

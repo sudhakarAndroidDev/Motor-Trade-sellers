@@ -1,0 +1,2 @@
+rootProject.name = "Compare_My_Trade"
+include ':app'

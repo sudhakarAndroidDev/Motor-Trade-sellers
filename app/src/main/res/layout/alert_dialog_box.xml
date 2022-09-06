@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/currentbackground"
+    >
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/progressBar"
+        style="@style/SpinKitView.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:focusableInTouchMode="true"
+        android:indeterminate="true"
+        android:layout_marginTop="10dp"
+        android:elevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/blue" />
+    <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        app:cardElevation="16dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/currentbackground"
+        android:layout_centerInParent="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/currentbackground"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Title"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/mulish_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="Title"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#9F000000"
+                    android:fontFamily="@font/mulish_medium"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:paddingTop="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#26000000"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/no"
+                    android:elevation="2dp"
+                    android:background="@color/white"
+                    android:layout_marginEnd="0.58dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/no_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="-2dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/mulish_medium"
+                        android:text="NO"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/yes"
+                    android:elevation="2dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:id="@+id/yestext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:elevation="-12dp"
+                        android:fontFamily="@font/mulish_medium"
+                        android:text="YES"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

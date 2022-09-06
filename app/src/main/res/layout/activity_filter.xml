@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ChangePassword"
+    android:orientation="vertical"
+    android:background="#FF555555">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        android:background="@drawable/bg4"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginEnd="180dp"
+            android:layout_marginTop="15dp"
+            android:background="#83AAAAAA"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Filters &amp; Sort"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:fontFamily="@font/mulish_regular"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Close"
+                android:textSize="13dp"
+                android:fontFamily="@font/mulish_regular"
+                android:textColor="#E74C3C"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:padding="20dp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selected Filters"
+            android:textSize="13dp"
+            android:fontFamily="@font/mulish_regular"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingStart="10dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:numColumns="100"
+            android:padding="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/filterRV"
+            android:layout_width="130dp"
+            android:layout_height="370dp"
+            android:layout_weight="0"
+            android:background="#F1F6FF" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/filterValuesRV"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_weight="1"
+            android:background="#ffffff" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#DFFFFFFF"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg4"
+        android:elevation="20dp"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/bid_now_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg3"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish_regular"
+                android:text="Apply Filters"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish_regular"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#1763EA"
+                android:textStyle="bold"
+                android:background="@color/white"
+                android:text="Reset All"/>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+
+            <!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:weightSum="2"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:padding="8dp"-->
+<!--            android:background="@drawable/bg4">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/clearB"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textStyle="bold"-->
+<!--                android:background="@drawable/bg3"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:text="Clear" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/applyB"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textColor="#1763EA"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="Apply" />-->
+
+<!--        </LinearLayout>-->
+
+
+
+</LinearLayout>

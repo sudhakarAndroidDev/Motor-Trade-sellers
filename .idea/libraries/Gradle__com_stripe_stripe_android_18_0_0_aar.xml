@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.stripe:stripe-android:18.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/35512a3448ba03f76b957e3e3e1fdd54/jetified-stripe-android-18.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b3f79d220abbea73ef305f69eb029f7c/jetified-stripe-android-18.0.0/res" />
+      <root url="file://$USER_HOME$/Downloads/CustomListView-master/caches/transforms-2/files-2.1/35512a3448ba03f76b957e3e3e1fdd54/jetified-stripe-android-18.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/Downloads/CustomListView-master/caches/transforms-2/files-2.1/35512a3448ba03f76b957e3e3e1fdd54/jetified-stripe-android-18.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/CustomListView-master/caches/transforms-2/files-2.1/35512a3448ba03f76b957e3e3e1fdd54/jetified-stripe-android-18.0.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/CustomListView-master/caches/modules-2/files-2.1/com.stripe/stripe-android/18.0.0/5b12f5c9dd9e0807a5f8a40885e14b4057bc8bcf/stripe-android-18.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

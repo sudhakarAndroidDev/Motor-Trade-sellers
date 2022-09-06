@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.stripe:paymentsheet:18.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Downloads/CustomListView-master/caches/transforms-2/files-2.1/9ff0683f02d95f542f014509920bfd21/jetified-paymentsheet-18.0.0/res" />
+      <root url="file://$USER_HOME$/Downloads/CustomListView-master/caches/transforms-2/files-2.1/9ff0683f02d95f542f014509920bfd21/jetified-paymentsheet-18.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/Downloads/CustomListView-master/caches/transforms-2/files-2.1/9ff0683f02d95f542f014509920bfd21/jetified-paymentsheet-18.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/CustomListView-master/caches/modules-2/files-2.1/com.stripe/paymentsheet/18.0.0/f79a2079db6986da6dbd9d38d694006c3e14ca02/paymentsheet-18.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

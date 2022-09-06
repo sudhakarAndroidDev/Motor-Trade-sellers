@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Submit"
+    android:orientation="vertical"
+    android:background="@drawable/currentbackground"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="2"
+        android:elevation="2dp"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Buyer Detail"
+        android:textSize="15dp"
+        android:padding="20dp"
+        android:fontFamily="@font/mulish_regular"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            >
+            <TextView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:textSize="13dp"
+                android:fontFamily="@font/mulish_regular"
+                android:textColor="#E74C3C"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:padding="20dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/background2"
+        android:layout_margin="15dp"
+        android:elevation="2dp"
+        >
+            <ImageView
+                android:id="@+id/buyer_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/buyer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="George Bailey"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/mulish_regular"
+                android:layout_marginStart="20dp"
+             />
+            <TextView
+                android:id="@+id/buyer_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+1 9876 12 3456"
+                android:textSize="14dp"
+                android:fontFamily="@font/mulish_regular"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Business Name"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:fontFamily="@font/mulish_regular"
+        android:layout_marginStart="20dp"
+        />
+    <TextView
+        android:id="@+id/buyer_business_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Starc Industries"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:fontFamily="@font/mulish_regular"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Business Email"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:fontFamily="@font/mulish_regular"
+        android:layout_marginStart="20dp"
+        />
+    <TextView
+        android:id="@+id/buyer_business_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="georgebailey123@gmail.com"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:fontFamily="@font/mulish_regular"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address Line"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:fontFamily="@font/mulish_regular"
+        android:layout_marginStart="20dp"
+        />
+    <TextView
+        android:id="@+id/buyer_address_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABN#1234567890"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:fontFamily="@font/mulish_regular"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        />
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="State"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="12dp"-->
+<!--        android:fontFamily="@font/mulish_regular"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:id="@+id/buyer_state"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Newyork City"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="15dp"-->
+<!--        android:fontFamily="@font/mulish_regular"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pin code"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:fontFamily="@font/mulish_regular"
+        android:layout_marginStart="20dp"
+        />
+    <TextView
+        android:id="@+id/buyer_pin_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="123456"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:fontFamily="@font/mulish_regular"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+</LinearLayout>

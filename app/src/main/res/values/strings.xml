@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Compare My Trade Sellers</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Forgot Password</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="select_state">State</string>
+    <string-array name="state">
+        <item>State</item>
+        <item>Karnataka</item>
+        <item>Delhi</item>
+        <item>Mumbai</item>
+    </string-array>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_manage_bids">History</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_more_option">More</string>
+    <string name="about_us">About Us</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="under_development">This page is under development</string>
+    <string name="change_password">Change Password</string>
+    <string name="top_recommendation">Top Recommendation</string>
+
+    <string name="welcome">Welcome Back to</string>
+    <string name="compare">Compare My Trade</string>
+    <string name="login_to_continue">Login to continue using your account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="reset">Reset</string>
+    <string name="login">Login</string>
+    <string name="about_us_title">ABOUT US</string>
+    <string name="sample_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident </string>
+    <string name="login_with">Or Login With</string>
+    <string name="signup_with">Or Sign up with</string>
+    <string name="have_account">Don’t have an Account?</string>
+    <string name="Already_have_a_Account">Already have a Account?</string>
+    <string name="create_account">Create Account</string>
+    <string name="test_name">George Bailey</string>
+    <string name="test_mail">georgebailey123@gmail.com</string>
+    <string name="miscellaneous">Miscellaneous</string>
+
+    <string name="forgot_pass">Enter your email associated with your account and we’ll send a link for your Reset password.</string>
+    <string name="submit">Submit</string>
+
+    <string name="new_password">Your new password must be different from\nprevious used passwords.</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="update_password">UPDATE PASSWORD</string>
+
+    <string name="create_own_account">Create your own account to explore the Cars and Buy your Dream one!</string>
+    <string name="login_now">Login Now</string>
+
+    <string name="full_name">Full Name</string>
+    <string name="first_name">Full Name</string>
+    <string name="last_name">Business Name</string>
+    <string name="email_address">Business Email</string>
+    <string name="address">ABN</string>
+    <string name="business_name">Business Name</string>
+    <string name="business_email">Business Email</string>
+    <string name="phone">Business Phone</string>
+    <string name="business_phone">Business Phone</string>
+    <string name="business_registration">Business Registration Document</string>
+    <string name="upload_file">Upload File</string>
+    <string name="abn">ABN</string>
+    <string name="post_code">Post Code</string>
+    <string name="set_password">Set Password</string>
+    <string name="continuee">Continue</string>
+
+    <string name="facebook_app_id">1288529525304433</string>
+    <string name="fb_login_protocol_scheme">fb1288529525304433</string>
+    <string name="facebook_client_token">a8de9a6703529d4b14f7f020bb602238</string>
+
+<!--    <string name="facebook_app_id">685641049258719</string>-->
+<!--    <string name="fb_login_protocol_scheme">fb685641049258719</string>-->
+    <string name="algo">Home</string>
+    <string name="course">History</string>
+    <string name="profile">Notification</string>
+
+
+</resources>

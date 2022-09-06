@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="16dp"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/currentbackground"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/vector51"
+                     />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/plan_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/mulish_regular"
+                            android:text="Basic"
+                            android:textColor="#232120"
+                            android:textSize="16dp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+
+                        <CheckBox
+                            android:id="@+id/plan_check"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:button="@drawable/plan_check"
+                             />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/plan_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/mulish_regular"
+                            android:text="$10"
+                            android:textColor=" #1763EA"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/plan_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/mulish_regular"
+                            android:text="/ month"
+                            android:textColor=" #808080"
+                            android:textSize="14dp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--                        <LinearLayout-->
+                <!--                            android:layout_width="match_parent"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_gravity="center"-->
+                <!--                            android:gravity="end">-->
+
+                <!--                            <ImageView-->
+                <!--                                android:layout_width="15dp"-->
+                <!--                                android:layout_height="15dp"-->
+                <!--                                android:src="@drawable/vector53" />-->
+
+                <!--                        </LinearLayout>-->
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="#2D171616">
+
+            </View>
+
+            <TextView
+                android:id="@+id/plan_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/mulish_regular"
+                android:text="150 bids for month"
+                android:textColor="#A7000000" />
+
+            <!--                    <LinearLayout-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_marginStart="20dp"-->
+            <!--                        android:layout_marginTop="20dp"-->
+            <!--                        android:layout_marginEnd="10dp"-->
+            <!--                        android:orientation="horizontal">-->
+
+            <!--                        <ImageView-->
+            <!--                            android:layout_width="10dp"-->
+            <!--                            android:layout_height="10dp"-->
+            <!--                            android:layout_gravity="center"-->
+            <!--                            android:src="@drawable/vector54" />-->
+
+            <!--                        <TextView-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_gravity="center"-->
+            <!--                            android:layout_marginStart="10dp"-->
+            <!--                            android:fontFamily="@font/mulish_regular"-->
+            <!--                            android:text="Lorem ipsum is a dummy text content in a paragraph."-->
+            <!--                            android:textColor="#414346"-->
+            <!--                            android:textSize="12dp">-->
+
+            <!--                        </TextView>-->
+
+            <!--                    </LinearLayout>-->
+
+            <!--                    <LinearLayout-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_marginStart="20dp"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:layout_marginEnd="10dp"-->
+            <!--                        android:orientation="horizontal">-->
+
+            <!--                        <ImageView-->
+            <!--                            android:layout_width="10dp"-->
+            <!--                            android:layout_height="10dp"-->
+            <!--                            android:layout_gravity="center"-->
+            <!--                            android:src="@drawable/vector54" />-->
+
+            <!--                        <TextView-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_gravity="center"-->
+            <!--                            android:layout_marginStart="10dp"-->
+            <!--                            android:layout_marginTop="5dp"-->
+            <!--                            android:fontFamily="@font/mulish_regular"-->
+            <!--                            android:text="Sed ut perspiciatis unde omnis iste natus error sit\nvoluptatem accusantium."-->
+            <!--                            android:textColor="#414346"-->
+            <!--                            android:textSize="12dp">-->
+
+            <!--                        </TextView>-->
+
+            <!--                    </LinearLayout>-->
+
+            <!--                    <LinearLayout-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_marginStart="20dp"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:layout_marginEnd="10dp"-->
+            <!--                        android:layout_marginBottom="20dp"-->
+            <!--                        android:orientation="horizontal">-->
+
+            <!--                        <ImageView-->
+            <!--                            android:layout_width="10dp"-->
+            <!--                            android:layout_height="10dp"-->
+            <!--                            android:layout_gravity="center"-->
+            <!--                            android:src="@drawable/vector54" />-->
+
+            <!--                        <TextView-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_gravity="center"-->
+            <!--                            android:layout_marginStart="10dp"-->
+            <!--                            android:fontFamily="@font/mulish_regular"-->
+            <!--                            android:text="At vero eos et accusamus et iusto odio dignissimos. "-->
+            <!--                            android:textColor="#414346"-->
+            <!--                            android:textSize="12dp">-->
+
+            <!--                        </TextView>-->
+
+            <!--                    </LinearLayout>-->
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

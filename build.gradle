@@ -1,0 +1,61 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = "1.5.21"
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.2.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+ext {
+    // Sdk and tools
+    VERSION_CODE = 1
+    VERSION_NAME = "1.0.0"
+    minSdkVersion = 19
+    targetSdkVersion = 28
+    compileSdkVersion = 28
+    buildToolsVersion = '28.0.3'
+    appCompat = "1.1.0"
+    material = "1.0.0"
+    constraintlayout = "2.1.0"
+    legacySupport = "1.0.0"
+    jUnit = "4.12"
+    SupportVersion = "28.0.0"
+    annotation = "1.1.0"
+    pagingVersion = "3.0.1"
+    retrofit = "2.9.0"
+    squareup_okhttp = "4.2.2"
+    glide = "4.11.0"
+    navigation = "1.1.0"
+    room_version = "2.2.0-rc01"
+    archLifecycleVersion = '2.3.1'
+    koin_version = '2.0.1'
+    MULTIDEX='1.0.3'
+    COROUTINES='1.4.3'
+    shimmer='0.5.0'
+    appache_common='1.3.2'
+    lifecycle_version = "2.4.0-alpha02"
+    recycler_view_version = '1.2.1'
+    bubbletabbar = '1.0.8'
+    dAndDRecyclerView = '1.1.0'
+}

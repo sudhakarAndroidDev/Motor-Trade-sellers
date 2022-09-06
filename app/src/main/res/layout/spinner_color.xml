@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:textSize="14dp"
+    android:paddingStart="15dp"
+    android:textColor="#6B000000"
+    android:fontFamily="@font/mulish_regular"
+
+ >
+
+</TextView>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:paddingRight="5dp">
+
+
+
+
+    <TableRow android:weightSum="2" >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="14dp"
+            android:text="Make"
+            android:gravity="center"
+            android:background="@drawable/background2"
+            android:fontFamily="@font/mulish_regular"
+            android:textColor="#5E6166"
+            android:minWidth="100dp"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_regular"
+            android:padding="15dp"
+            android:text="BMW"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+
+            />
+
+    </TableRow>
+    <TableRow >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="14dp"
+            android:text="Body Type"
+            android:gravity="center"
+            android:background="@drawable/background2"
+            android:textColor="#5E6166"
+            android:fontFamily="@font/mulish_regular"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Body Type"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mulish_regular"
+            android:padding="15dp"
+
+            />
+
+    </TableRow>
+    <TableRow >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="14dp"
+            android:text="Model"
+            android:textColor="#5E6166"
+            android:fontFamily="@font/mulish_regular"
+            android:gravity="center"
+            android:background="@drawable/background2"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="730LD Seden"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mulish_regular"
+            android:padding="15dp"
+            />
+
+    </TableRow>
+    <TableRow >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="Model Description"
+            android:textColor="#5E6166"
+            android:fontFamily="@font/mulish_regular"
+            android:background="@drawable/background2"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Lorem ipsum is a dummy text content in a paragraph..."
+            android:fontFamily="@font/mulish_regular"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            />
+
+    </TableRow>
+
+    <TableRow >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="Model Year"
+            android:textColor="#5E6166"
+            android:fontFamily="@font/mulish_regular"
+            android:padding="15dp"
+            android:background="@drawable/background2"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="2015"
+            android:textStyle="bold"
+            android:fontFamily="@font/mulish_regular"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            />
+
+
+    </TableRow>
+
+    <TableRow >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="Transmission"
+            android:textColor="#5E6166"
+            android:fontFamily="@font/mulish_regular"
+            android:padding="15dp"
+            android:background="@drawable/background2"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Automatic"
+            android:fontFamily="@font/mulish_regular"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            />
+
+
+    </TableRow>
+
+    <TableRow >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="Drive Type"
+            android:textColor="#5E6166"
+            android:fontFamily="@font/mulish_regular"
+            android:padding="15dp"
+            android:background="@drawable/background2"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:textSize="14dp"
+            android:text="All Wheel Drive"
+            android:textStyle="bold"
+            android:fontFamily="@font/mulish_regular"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            />
+
+    </TableRow>
+    <TableRow >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="Fuel Type"
+            android:textColor="#5E6166"
+            android:fontFamily="@font/mulish_regular"
+            android:padding="15dp"
+            android:background="@drawable/background2"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Diesel"
+            android:textStyle="bold"
+            android:fontFamily="@font/mulish_regular"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            />
+
+    </TableRow>
+    <TableRow >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="Service Log Book"
+            android:textColor="#5E6166"
+            android:fontFamily="@font/mulish_regular"
+            android:padding="15dp"
+            android:background="@drawable/background2"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="-"
+            android:fontFamily="@font/mulish_regular"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            />
+
+    </TableRow>
+    <TableRow >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="Current Odometer/ \nMileage"
+            android:fontFamily="@font/mulish_regular"
+            android:textColor="#5E6166"
+            android:padding="15dp"
+            android:background="@drawable/background2"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="10,000KM / 12kpl\n"
+            android:textStyle="bold"
+            android:fontFamily="@font/mulish_regular"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            />
+
+
+    </TableRow>
+
+    <TableRow >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="Registration No."
+            android:textColor="#5E6166"
+            android:fontFamily="@font/mulish_regular"
+            android:padding="15dp"
+            android:background="@drawable/background2"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="TN01 AU 4562"
+            android:textStyle="bold"
+            android:fontFamily="@font/mulish_regular"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            />
+
+
+    </TableRow>
+
+    <TableRow >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="Vehicle VIN"
+            android:textColor="#5E6166"
+            android:fontFamily="@font/mulish_regular"
+            android:padding="15dp"
+            android:background="@drawable/background2"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Vehicle VIN"
+            android:fontFamily="@font/mulish_regular"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            />
+
+
+    </TableRow>
+    <TableRow >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="Vehicle Price"
+            android:textColor="#5E6166"
+            android:fontFamily="@font/mulish_regular"
+            android:padding="15dp"
+            android:background="@drawable/background2"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="$40,500"
+            android:textStyle="bold"
+            android:fontFamily="@font/mulish_regular"
+            android:textColor="#1763EA"
+            android:padding="15dp"
+            />
+
+
+    </TableRow>
+    <TableRow >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="Vehicle Status"
+            android:textColor="#5E6166"
+            android:fontFamily="@font/mulish_regular"
+            android:padding="15dp"
+            android:background="@drawable/background2"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Available"
+            android:textStyle="bold"
+            android:textColor="#00B99F"
+            android:fontFamily="@font/mulish_regular"
+            android:padding="15dp"
+            />
+
+    </TableRow>
+
+</TableLayout>

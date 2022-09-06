@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/home"
+    >
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@android:color/transparent"
+              >
+
+              <com.github.ybq.android.spinkit.SpinKitView
+                  android:id="@+id/progressBar"
+                  style="@style/SpinKitView.Circle"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:focusableInTouchMode="true"
+                  android:indeterminate="true"
+                  android:elevation="8dp"
+                  app:SpinKit_Color="@color/blue" />
+
+
+              <LinearLayout
+                  android:id="@+id/linear1"
+                  android:layout_width="match_parent"
+                  android:layout_height="210dp"
+                  android:background="@drawable/v_40"
+                  android:orientation="vertical">
+
+
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginStart="20dp"
+                         android:layout_marginTop="20dp"
+                         android:layout_marginEnd="10dp"
+                         android:orientation="horizontal"
+                         android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                   <TextView
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:fontFamily="@font/mulish_regular"
+                                       android:text="Hi,"
+                                       android:textColor="#C8FFFFFF"
+                                       android:textSize="13dp" />
+
+                                   <TextView
+                                       android:id="@+id/name"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:fontFamily="@font/mulish_regular"
+                                       android:textColor="@color/white"
+                                       android:textSize="18dp"
+                                       android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:paddingEnd="2dp">
+
+
+                                   <com.google.android.material.imageview.ShapeableImageView
+                                       android:id="@+id/profile_photo"
+                                       android:layout_width="50dp"
+                                       android:layout_height="50dp"
+                                       android:layout_marginEnd="20dp"
+                                       android:scaleType="centerCrop"
+                                       app:shapeAppearanceOverlay="@style/rounded_corner" />
+
+
+                            </LinearLayout>
+
+
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginStart="10dp"
+                         android:layout_marginTop="23dp"
+                         android:layout_marginEnd="10dp"
+                         android:background="@drawable/bg5"
+                         android:elevation="2dp"
+                         android:orientation="horizontal"
+                         android:padding="15dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                   <TextView
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:fontFamily="@font/mulish_regular"
+                                       android:text="Total Cars"
+                                       android:textColor="#242222"
+                                       android:textSize="16dp"
+                                       android:textStyle="bold" />
+
+                                   <TextView
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:fontFamily="@font/mulish_regular"
+                                       android:text="You have posted"
+                                       android:textColor="#242222"
+                                       android:textSize="13dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:paddingEnd="2dp">
+
+                                   <RelativeLayout
+                                       android:layout_width="40dp"
+                                       android:layout_height="40dp"
+                                       android:background="@drawable/bg3"
+
+                                       >
+
+                                          <TextView
+                                              android:id="@+id/bid_count"
+                                              android:layout_width="wrap_content"
+                                              android:layout_height="wrap_content"
+                                              android:layout_centerInParent="true"
+                                              android:fontFamily="@font/mulish_regular"
+                                              android:textColor="@color/white"
+                                              android:textSize="16dp" />
+                                   </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                     </LinearLayout>
+
+              </LinearLayout>
+
+              <ScrollView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="210dp"
+
+                  >
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:paddingBottom="200dp"
+                         >
+
+                         <TextView
+                             android:id="@+id/linear2"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="10dp"
+                             android:layout_marginTop="15dp"
+                             android:fontFamily="@font/mulish_regular"
+                             android:text="Accepted Bids"
+                             android:textColor="#202123"
+                             android:textSize="14dp"
+                             android:textStyle="bold" />
+
+
+                         <androidx.recyclerview.widget.RecyclerView
+                             android:id="@+id/recyclerview_accepted_bids"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@+id/linear2"
+                             android:orientation="horizontal" />
+
+                         <com.arindicatorview.ARIndicatorView
+                             android:id="@+id/ar_indicator"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@id/recyclerview_accepted_bids"
+                             android:layout_marginTop="5dp"
+                             android:layout_marginBottom="10dp"
+                             android:gravity="center"
+                             android:orientation="horizontal"
+                             app:animate_indicator_scrubbing="true"
+                             app:indicator_scrubbing="false"
+                             app:indicator_size="15"
+                             app:number_of_indicators="5" />
+
+                         <TextView
+                             android:id="@+id/linear3"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@+id/recyclerview_accepted_bids"
+                             android:layout_marginStart="10dp"
+                             android:layout_marginTop="15dp"
+                             android:fontFamily="@font/mulish_regular"
+                             android:text="Live Biddings"
+                             android:textColor="#202123"
+                             android:textSize="14dp"
+                             android:textStyle="bold" />
+
+                         <androidx.recyclerview.widget.RecyclerView
+                             android:id="@+id/recyclerview_accepted_bids2"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_below="@+id/linear3"
+                             android:nestedScrollingEnabled="false"/>
+                  </RelativeLayout>
+              </ScrollView>
+
+              <com.google.android.material.floatingactionbutton.FloatingActionButton
+                  android:id="@+id/floating3"
+                  style="@style/Floating"
+                  android:layout_width="80dp"
+                  android:layout_height="80dp"
+                  android:layout_alignParentEnd="true"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginStart="16dp"
+                  android:layout_marginTop="16dp"
+                  android:layout_marginEnd="16dp"
+                  android:layout_marginBottom="16dp"
+                  android:backgroundTintMode="src_atop"
+                  android:focusable="true"
+                  app:fabCustomSize="65dp" />
+
+
+       </RelativeLayout>
+
+</FrameLayout>
